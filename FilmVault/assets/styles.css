@@ -1,0 +1,17 @@
+
+body {background-color: blue;}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive columns */
+    gap: 10px; /* Space between images */
+    padding: 10px; /* Space around the grid */
+}
+
+.image-grid img {
+    width: 100%; /* Make images fill their grid cells */
+    height: 500px; /* Fixed height to ensure uniform size */
+    object-fit: cover; /* Crop images to cover the area */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: subtle shadow */
+}
